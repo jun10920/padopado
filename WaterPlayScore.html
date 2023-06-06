@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>파도파도</title>
+    <link rel="stylesheet" href="Common.css" />
+  </head>
+  <body>
+    <div class="Main">
+      <div class="Header_2">
+        <button type="button" onclick="location.href='Home.html'">
+          <img
+            src="https://i.postimg.cc/pTZtFKtx/image.png"
+            alt="PadoPado LOGO"
+            width="250"
+            height="47"
+          />
+        </button>
+      </div>
+      <div class="Container-WaterPlayScore">
+        <!-- left -->
+        <div class="Container-Left">
+          <div class="Container-LeftHeader">
+            <form id="leftSearch-form" class="Container-LeftHeader">
+              <input type="text" placeholder="물놀이 지역을 입력하세요 !" />
+            </form>
+            <!--검색한 지역으로 화면에 나와야함-->
+          </div>
+          <div class="MainWS">
+            <!-- <canvas id="myCanvas" width="100%" height="90%"></canvas> -->
+          </div>
+        </div>
+        <!-- Right -->
+        <div class="Container-Right">
+          <div class="Container-RightHeader">
+            <button class="TodayWS2">오늘의 물놀이 정보</button>
+            <button class="WeeklyWS2">일주일 물놀이 지수</button>
+          </div>
+          <div class="Container-RightInformation">
+            <div class="Container-RightInformation-Weather">
+              <div class="RightInformation-Weather">(날씨)</div>
+            </div>
+            <div class="Container-RightInformation-Others">
+              <div class="Container-RightInformation-UV">
+                <div class="RightInformation-UV">(자외선 지수)</div>
+              </div>
+              <div class="Container-RightInformation-WaterTemperature">
+                <div class="RightInformation-WaterTemperature">(수온)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="app2.js"></script>
+    <script type="module" src="waterplayscore.js"></script>
+  </body>
+</html>

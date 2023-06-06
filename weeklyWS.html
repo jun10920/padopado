@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>파도파도</title>
+    <link rel="stylesheet" href="Common.css" />
+  </head>
+  <body>
+    <div class="Main">
+      <div class="Header_2">
+        <button type="button" onclick="location.href='Home.html'">
+          <img
+            src="https://i.postimg.cc/pTZtFKtx/image.png"
+            alt="PadoPado LOGO"
+            width="250"
+            height="47"
+          />
+        </button>
+      </div>
+      <div class="Container-WaterPlayScore">
+        <!-- left -->
+        <div class="Container-Left">
+          <div class="Container-LeftHeader">
+            <form id="leftSearch-form" class="Container-LeftHeader">
+              <input type="text" placeholder="물놀이 지역을 입력하세요 !" />
+            </form>
+            <!--검색한 지역으로 화면에 나와야함-->
+          </div>
+          <div class="MainWS"></div>
+        </div>
+        <!-- Right -->
+        <div class="Container-Right">
+          <div class="Container-RightHeader">
+            <button class="TodayWS3">오늘의 물놀이 정보</button>
+            <button class="WeeklyWS3">일주일 물놀이 지수</button>
+          </div>
+          <div class="Container-rightWeeklyWS">
+            <div class="Container-rightWeeklyWS-high">
+              <div class="WWS1st"></div>
+              <div class="WWS2st"></div>
+              <div class="WWS3st"></div>
+              <div class="WWS4st"></div>
+            </div>
+            <div class="Container-rightWeeklyWS-low">
+              <div class="WWS3st"></div>
+              <div class="WWS4st"></div>
+              <div class="WWS7st"></div>
+              <div class="WWS8st"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="app2.js"></script>
+  </body>
+</html>
